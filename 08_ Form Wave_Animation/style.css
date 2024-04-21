@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(to right, rgb(233, 147, 147), rgb(236, 199, 130), rgb(223, 223, 158), rgb(97, 231, 97), rgb(103, 103, 255), rgb(183, 114, 233), rgb(223, 155, 223));
+    color: #000;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(255, 241, 221);
+    padding: 20px 40px;
+    border-radius: 6px;
+    border: 1px solid black;
+    
+}
+
+.container h1 {
+    color: red;
+    /* text-align: center; */
+    margin-bottom: 30px;
+
+}
+
+.container a {
+    text-decoration: none;
+    color: darkblue;
+    
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #000;
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #000;
+}
+.form-control input:focus, 
+.form-control input:valid {
+    outline: 0;
+    /* border: none; */
+    border-bottom-color: rgb(236, 66, 14);
+}
+
+
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: rgb(12, 190, 250);
+    transform: translateY(-30px);
+    /* transition: 0.3s ease-in; */
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 80%;
+    padding: 15px;
+    background: rgb(203, 228, 238);
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+.btn:focus {
+    outline: 0;
+}
+.btn:active {
+    transform: scale(0.98);
+}
+
+
