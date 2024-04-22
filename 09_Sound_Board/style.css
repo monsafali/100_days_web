@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(to right, rgb(233, 147, 147), rgb(236, 199, 130), rgb(223, 223, 158), rgb(97, 231, 97), rgb(103, 103, 255), rgb(183, 114, 233), rgb(223, 155, 223));
+    color: #000;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.btn {
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.btn:focus {
+    outline: none;
+}
